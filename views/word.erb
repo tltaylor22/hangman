@@ -1,0 +1,19 @@
+<html>
+<link href="css/styles.css" rel="stylesheet">
+
+<br><br>
+
+<div class="subhead">Nice to meet you <%=player1%> and <%=player2%>!</div><p>
+<br>
+<div class="bodycopy"><%=player1%>, please type a secrete word in the box below.</div><br><br>
+
+<center><form method='post' action='/play_game'>
+
+<input type="hidden" name="p2_name_input" value="<%player2%>">
+<input type="hidden" name="p2_name_input" value="<%player1%>">
+<input type="password" name="word_input">
+<input type='submit' value='SUBMIT'>
+<br><br>
+<center><img src="/../images/hangman.jpg"></center>
+
+</html>
